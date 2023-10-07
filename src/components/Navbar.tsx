@@ -54,7 +54,7 @@ const Navbar = () => {
           <BsBookmark />
           <AiOutlineShopping />
         </div>
-        <Link href="/" className="uppercase py-3 px-4 bg-[#f4ce47] text-[#2a2c2e] rounded-lg">
+        <Link href="/" className="uppercase py-3 px-4 bg-green-700 text-[#2a2c2e] rounded-lg">
             login
         </Link>
       </div>
