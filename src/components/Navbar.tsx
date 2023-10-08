@@ -60,6 +60,8 @@ const Navbar = () => {
           className="uppercase py-3 px-4 bg-[#F4CE47] text-[#2a2c2e] rounded-lg"
         >
           login
+        <Link href="/" className="uppercase py-3 px-4 bg-[#f4ce47] text-[#2a2c2e] rounded-lg">
+            login
         </Link>
       </div>
     </div>
