@@ -5,7 +5,6 @@ import { FiSearch } from "react-icons/fi";
 import { BsBookmark } from "react-icons/bs";
 import { AiOutlineShopping } from "react-icons/ai";
 
-
 const navLinks = [
   {
     id: 1,
@@ -39,7 +38,9 @@ const Navbar = () => {
     <div className="bg-[#2a2c2e] text-[#f6f4f0] px-4 py-4 w-11/12 mx-auto translate-y-4 rounded-xl flex justify-between">
       <Link href="/" className="flex items-center gap-4">
         <Image src="/Logo.svg" width={30} height={30} alt="" />
-        <span className="uppercase font-semibold text-lg hidden sm:block">big bookshelf</span>
+        <span className="uppercase font-semibold text-lg hidden sm:block">
+          big bookshelf
+        </span>
       </Link>
       <div className="sm:flex sm:items-center hidden gap-6">
         {navLinks.map((navLink) => (
@@ -54,6 +55,11 @@ const Navbar = () => {
           <BsBookmark />
           <AiOutlineShopping />
         </div>
+        <Link
+          href="/"
+          className="uppercase py-3 px-4 bg-[#F4CE47] text-[#2a2c2e] rounded-lg"
+        >
+          login
         <Link href="/" className="uppercase py-3 px-4 bg-[#f4ce47] text-[#2a2c2e] rounded-lg">
             login
         </Link>
@@ -61,6 +67,5 @@ const Navbar = () => {
     </div>
   );
 };
-
 
 export default Navbar;
