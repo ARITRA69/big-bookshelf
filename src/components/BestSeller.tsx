@@ -104,8 +104,8 @@ const BestSeller = (props: Props) => {
     <div className="bg-[#2a2c2e]">
       <div className="w-11/12 mx-auto">
         <h2 className="uppercase text-[#f6f4f0] text-3xl py-6">bestseller</h2>
-        <div className="grid grid-cols-3 grid-rows-3 gap-3">
-          <div className="bg-[#F4CE47] rounded-2xl text-[#f6f4f0] flex justify-center items-center h-full text-4xl">
+        <div className="grid gird-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-3">
+          <div className="bg-[#F4CE47] rounded-2xl text-[#f6f4f0] flex justify-center items-center h-full text-4xl hover:scale-105 duration-300 cursor-pointer">
             SEE ALL
           </div>
           {books.map((book) => (
@@ -123,32 +123,37 @@ const BestSeller = (props: Props) => {
                 />
               </div>
               <div className="w-[60%] flex justify-between">
-                <div className="flex flex-col justify-between">
-
-                    {/* Name and author */}
-                  <div className="space-y-4">
+                <div className="flex flex-col justify-between h-full lg:h-[80%] my-auto w-full">
+                  {/* Name and author */}
+                  <div className="space-y-2 lg:space-y-4">
                     <p className="tracking-wide">{book.author}</p>
-                    <p className="text-lg font-semibold">{book.title}</p>
+                    <p className="text-lg lg:text-xl font-semibold">
+                      {book.title}
+                    </p>
                   </div>
 
                   {/* Rating and reviews */}
-                  <div className="space-y-2">
-                    <div className="p-2 border-2 border-[#2a2c2e] w-max flex items-center gap-3 rounded-3xl">
+                  <div className="space-y-2 text-xs md:text-md">
+                    <div className="p-1 lg:p-2 border lg:border-2 border-[#2a2c2e] w-max flex items-center gap-3 rounded-3xl">
                       <span>{book.comments}</span>
                       <BiComment />
                     </div>
-                    <div className="p-2 border-2 border-[#2a2c2e] w-max flex items-center gap-3 rounded-3xl">
-                        <span>{book.stars}</span>
-                        <AiOutlineStar />
-                        <span>({book.reviews})</span>
+                    <div className="p-1 lg:p-2 border lg:border-2 border-[#2a2c2e] w-max flex items-center gap-1 sm:gap-3 rounded-3xl">
+                      <span>{book.stars}</span>
+                      <AiOutlineStar />
+                      <span>({book.reviews})</span>
                     </div>
                   </div>
 
-                    {/* price */}
-                  <div></div>
-                </div>
-                <div className="rounded-full p-2 bg-[#2a2c2e] text-[#f6f4f0] h-12 w-12  flex justify-center items-center">
-                  <BsBookmark />
+                  {/* price */}
+                  <div className="flex items-center justify-between w-full">
+                    <span className="text-lg md:text-xl lg:text-2xl">
+                      {book.discountedPrice}
+                    </span>
+                    <button className="rounded-full p-2 bg-[#2a2c2e] text-[#f6f4f0] h-12 w-12  flex justify-center items-center hover:invert duration-300">
+                      <BsBookmark />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
