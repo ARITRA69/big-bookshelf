@@ -105,7 +105,7 @@ const BestSeller = (props: Props) => {
       <div className="w-11/12 mx-auto">
         <h2 className="uppercase text-[#f6f4f0] text-3xl py-6">bestseller</h2>
         <div className="grid gird-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-3">
-          <div className="bg-[#F4CE47] rounded-2xl text-[#f6f4f0] flex justify-center items-center h-full text-4xl hover:scale-105 duration-300 cursor-pointer">
+          <div className="bg-[#F4CE47] rounded-2xl text-[#f6f4f0] flex justify-center items-center h-full text-4xl hover:scale-105 transition-all duration-300 cursor-pointer">
             SEE ALL
           </div>
           {books.map((book) => (
