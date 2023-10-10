@@ -273,7 +273,7 @@ const Books = (props: Props) => {
                       <span>{book.comments}</span>
                       <BiComment />
                     </div>
-                    <div className="p-1 lg:p-2 border lg:border-2 border-[#2a2c2e] w-max flex items-center gap-1 sm:gap-3 rounded-3xl">
+                    <div className="p-1 lg:p-2 border lg:border-2 border-[#2a2c2e] w-max flex items-center gap-1  sm:gap-3 rounded-3xl">
                       <span>{book.stars}</span>
                       <AiOutlineStar />
                       <span>({book.reviews})</span>
