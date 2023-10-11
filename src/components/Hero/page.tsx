@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import "./style.css"
 
-const Hero = () => {
+const Page = () => {
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 md:gap-4 mt-6 justify-between ">
@@ -53,4 +53,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Page;

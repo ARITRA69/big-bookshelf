@@ -1,8 +1,7 @@
 import BestSeller from "@/components/BestSeller";
-import Hero from "@/components/Hero";
+import Page from "@/components/Hero/page";
 import localFont from "next/font/local";
-import Image from "next/image";
-import Link from "next/link";
+
 
 const Satoshi = localFont({ src: "../../public/fonts/Satoshi-Black.ttf" });
 
@@ -16,7 +15,7 @@ export default function Home() {
         >
           reading makes the world huge
         </h1>
-        <Hero />
+        <Page />
       </div>
       {/* <BestSeller /> */}
     </main>

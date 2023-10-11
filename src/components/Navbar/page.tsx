@@ -4,6 +4,7 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { BsBookmark } from "react-icons/bs";
 import { AiOutlineShopping } from "react-icons/ai";
+import { SheetDemo } from "./Menu";
 
 const navLinks = [
   {
@@ -56,11 +57,15 @@ const Navbar = () => {
           <AiOutlineShopping />
         </div>
         <Link
-          href="/"
-          className="uppercase py-3 px-4 bg-[#F4CE47] text-[#2a2c2e] rounded-lg"
+          href="https://www.youtube.com/watch?v=vu4SPYmnWzg"
+          className="uppercase py-3 px-4 bg-[#F4CE47] text-[#2a2c2e] rounded-lg invisible sm:visible"
         >
-            login
+          login
         </Link>
+
+        <div className="uppercase bg-[#F4CE47] text-[#2a2c2e] rounded-lg sm:invisible visible">
+          <SheetDemo />
+        </div>
       </div>
     </div>
   );
