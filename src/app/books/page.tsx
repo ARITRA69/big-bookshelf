@@ -21,7 +21,6 @@ import { AiOutlineStar } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { BsBookmark } from "react-icons/bs";
 import localFont from "next/font/local";
-import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 type Props = {};
