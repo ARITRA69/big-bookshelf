@@ -119,7 +119,7 @@ const BestSeller = (props: Props) => {
                   width={400}
                   height={200}
                   alt=""
-                  className=" rounded-2xl"
+                  className="rounded-2xl h-[184px]"
                 />
               </div>
               <div className="w-[60%] flex justify-between">
